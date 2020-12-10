@@ -1,4 +1,4 @@
-{"motherboards":[{
+[{
 	"nombre":"MSI A320M-A PRO MAX",
 	"precio":"8722",
 	"tipo":"motherboard",
@@ -78,4 +78,4 @@
 	"descripcion":"Supports Socket FM2+ 95W / FM2 100W processors",
 	"informacion":"",
 	"caracteristicas":""
-}]}
+}]
