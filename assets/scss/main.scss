@@ -1,0 +1,20 @@
+@import "utilities/variables";
+@import "header";
+@import "navbar";
+@import "footer";
+@import "bodysection";
+@import "producto";
+@import "contacto";
+
+
+@import "media/mediaqueries_main";
+
+
+body {background-color: $color4;}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background:#CDFB6D;}
+::-webkit-scrollbar-thumb {background:$color3}
+::-webkit-scrollbar-thumb:hover {background:#6D7786;}
+
+
+

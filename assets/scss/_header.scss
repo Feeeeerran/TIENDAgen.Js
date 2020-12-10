@@ -1,0 +1,48 @@
+@import "utilities/variables";
+
+header {
+	background-color: $color3;
+
+	@mixin LOGObasic {
+		display: flex;
+		cursor:cell;
+		width: 100%;
+		margin:-1vh 3vh 1vh 3vh;
+		font:{size: 35vh;family:$titulo};
+	}
+	@mixin LOGOinteract {
+		span:hover {font-size: 33vh;}
+		span {
+			transition:font-size 0.5s;
+			color:$color1;
+			display: inline-block;
+			margin:0 -1vh 0 -1vh;
+			user-select: none;
+			text-shadow: 0 0 0.5vh $color1;
+		}
+	}
+
+	a:hover {text-decoration:none;}
+	h1 {
+		@include LOGObasic;
+		@include LOGOinteract;
+	}
+
+	h1.titulo_section {
+		@include LOGObasic;
+		a {@include LOGOinteract;}
+	}
+}
+
+
+@for $i from 1 through 7 {
+.logo_letter#{$i}{
+	animation: flash 0.3s linear 0.08s*$i forwards;}
+}
+
+@keyframes flash {
+	45%{color:white;}
+	50%{color:$color2;transform: scale(0.98);text-shadow: 0 0 3vh $color2}
+	55%{color:white;}
+}
+

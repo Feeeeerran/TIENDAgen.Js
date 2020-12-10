@@ -1,0 +1,226 @@
+@import "utilities/variables";
+
+
+div.album {
+	background-color:$color4;
+	padding-top: 4vh;padding-bottom: 20vh;
+
+
+	div.container_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
+	div.container_novedades{
+		margin-bottom:4vh;
+		cursor: crosshair;
+		background-color:$color4;
+		border:$amarillo solid 0.5vh;
+		transition: box-shadow 0.9s;
+
+		.container_novedades--title {
+			border-bottom: $amarillo 0.8vh solid;
+			background-color:$color3;
+			font:{size:4vh;family:$subtitulo;};
+			letter-spacing: 1.2vh;
+			color:$amarillo;
+		}
+		.container_novedades--body {font-family: $general;}
+	}
+
+
+	div.carousel {
+		margin-bottom: 14vh;
+		border-bottom:0.8vh solid $color2;
+		ol {
+			transform: translateY(4vh);
+			.active {background-color:$color1;box-shadow: 0.25vh 0.25vh black;}
+			li{
+				border:0.2vh solid $color3;
+				background-color:$color2;
+				width:20px;height:20px;
+				transform: skew(-25deg);
+			}
+		}
+	}
+
+	.album_destacados {
+		margin:{top:2vh;bottom:8vh;}
+		font:{
+			size: 5vh;
+			weight:bold;
+			family:$subtitulo;}
+		letter-spacing: 7vh}
+
+	div.container.col-12 {margin:0;}
+	div.media.container_media{
+		margin:3vh;margin-bottom: 4.5vh;
+		// IMG ----------------
+		@mixin mediaI($rev,$desp) {
+			visibility: visible;
+			flex-basis:auto;
+			position:relative;
+			box-shadow:$rev*0.4vh 0.75vh $color2,$rev*0.8vh 1.5vh #A2D0E1,$rev*.8vh 1.5vh #96C1D1;
+			border:0.5vh solid $color1;
+			border-radius:2%;
+			transition: box-shadow 0.8s,border 1.2s;
+			div {
+				transition:opacity 1.8s,transform 2s;
+				opacity:0;
+				position: absolute;
+				left:5%+$desp;
+				bottom:5%;
+				text-decoration: none;
+				font:{size:5vh;family:$subtitulo;weight:bold;};
+				letter-spacing: 1.5vh;
+				color:$color1;
+				text-shadow: -0.2vh -0.2vh $color3,0.2vh 0.2vh $color3,-0.2vh 0.2vh $color3,0.2vh -0.2vh $color3;
+			}
+		}
+
+		.media_img:hover,.media_img--reverse:hover {
+			box-shadow:0 0;
+			border-color: #3A4A50;
+			div{opacity:1;transform:translateY(-2.5vh);}}
+		.media_img  {@include mediaI(1,0);}
+		.media_img--reverse{@include mediaI(-1,55%);}
+
+		// BODY ----------------
+		@mixin mediaC($deg,$dir) {
+			visibility: visible;
+			padding:3vh;
+			position:absolute;
+			width:80%;
+		    bottom:20%;
+		    background-image:linear-gradient($deg,rgba(57, 62, 70,0.4), rgba(57, 62, 70,0.9));
+		    p {border-#{$dir}:0.7vh solid $amarillo;padding-#{$dir}:1vh;}
+		}
+
+		.media_body {@include mediaC(90deg,right);left:65%;}
+		.media_body--reverse {@include mediaC(-90deg,left);right:65%;}
+
+		// TEXT ----------------
+		h5:hover {text-shadow: 0 0;svg{visibility: visible;}}
+		h5 {
+			margin:0;
+			transition:text-shadow 0.5s;
+			letter-spacing:0.8vh;
+			color:$color1;
+			text-shadow: 0 0 0.5vh $color2;
+			font:{size: 6.5vh;weight:bold;family:$titulo;}
+			svg {margin-right: 2vh;visibility: visible;}}
+
+	    span {
+    		color:$amarillo;
+	    	font-size: 4vh;
+	    	text-shadow: 0 0 0.2vh $color2;}
+
+	    p {color:$color4;font:{size:2.5vh;family:$general;}margin-top: 1vh;}
+	}
+}
+
+
+div.albumSection {
+	padding:{left:5vh;right:5vh;}
+	background-color:$color4;
+
+
+	.albumSection_producto:hover {
+		box-shadow:0 0;
+		border-color: $color3;
+		.albumSection_producto_body {
+			border-color:$color3;
+			.albumSection_producto--name{
+				color:$color4;
+				background-position: -100% 0;
+				padding-left: 1vh;
+			}
+		}
+	}
+	.albumSection_producto{
+		margin-bottom: 9vh;
+		visibility: visible;
+		border:$color1 0.4vh groove;
+		transition: box-shadow 0.4s,border-color 1s;
+		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1;
+
+		@mixin producto {
+			font:{
+				size:3.2vh;
+				weight:bold;
+				family:$general;}
+			color:$color3;
+		}
+
+		.albumSection_producto_body {
+			border-top:$color1 0.5vh groove;
+			transition:border-color 1s;
+
+			.albumSection_producto--name{
+				@include producto;
+				transition:color 0.8s,background-position 0.5s ease-out,padding-left 0.8s;
+				font-family: $titulo;
+				background-image:linear-gradient(to right,white 50%,$color3 50%,rgba(57, 62, 70,0.3));
+				background-size: 200% auto;
+				background-position: 0 0;
+			}
+
+			.albumSection_producto--text{
+				font-size: 2.5vh;
+				color:$color3;
+			}
+			.albumSection_producto--price{
+				@include producto;
+				padding-left:0.5vh;
+				font:{size:2.5vh;weight:bold;};
+				background-image: linear-gradient(to right,$amarillo,white,white);
+			}
+		}
+	}
+}
+
+
+
+// Animaciones de entrada ---------------
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;	
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;		
+	visibility: visible !important;
+}			
+
+@keyframes slideUp {
+	0% {transform: translateY(100%);}
+	50%{transform: translateY(-12%);}		
+	100% {transform: translateY(0%);}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {-webkit-transform: translateY(100%);}
+	50%{-webkit-transform: translateY(-12%);}	
+	100% {-webkit-transform: translateY(0%);}	
+}
+
+
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	animation-duration: 1.2s;
+	-webkit-animation-duration: 1.2s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {transform:scale(0.9);opacity: 0.0;}
+	60% {transform: scale(1);opacity: 0.5}
+	100% {transform: scale(1);opacity: 1;}	
+}
+
+@-webkit-keyframes fadeIn {
+	0% {-webkit-transform:scale(0.9);opacity: 0.0;}
+	60% {-webkit-transform: scale(1);opacity: 0.5}
+	100% {-webkit-transform: scale(1);opacity: 1;}
+}
+
