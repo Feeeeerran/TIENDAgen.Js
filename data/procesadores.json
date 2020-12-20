@@ -1,81 +1,83 @@
-[{
-	"nombre":"MSI A320M-A PRO MAX",
-	"precio":"8722",
-	"tipo":"motherboard",
-	"id":"1",
-	"descripcion":"Soporta procesadores AMD® Ryzen™ 1ra, 2da Y 3ra Generación",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE GA-H110M-H",
-	"precio":"8550",
-	"tipo":"motherboard",
-	"id":"2",
-	"descripcion":"Soporte para procesadores de 7ma y 6ta Generación Intel® Core™",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASUS H310M-E",
-	"precio":"8540",
-	"tipo":"motherboard",
-	"id":"3",
-	"descripcion":"Intel® Socket 1151 for 8th Generation Core™ i7/Core™ i5/Core™ i3/Pentium®/Celeron®",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASUS H310M-R",
-	"precio":"9000",
-	"tipo":"motherboard",
-	"id":"4",
-	"descripcion":"Intel® Socket 1151 para 8 º Generación Core ™ i7 / Core ™ i5 / Core ™ i3 / Pentium® / Celeron® procesadores",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE H310M M.2 2.0 BOX M-ATX",
-	"precio":"8400",
-	"tipo":"motherboard",
-	"id":"5",
-	"descripcion":"Chipset: Intel® H310 Express Chipset para 8 º Generación Core ™ i7",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"MSI H310M POR-VDH PLUS",
-	"precio":"7800",
-	"tipo":"motherboard",
-	"id":"6",
-	"descripcion":"Soporta 9 º / 8 º Gen Intel ® Core ™ / Pentium ® Oro / Celeron ®",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE E1 6010N",
-	"precio":"6800",
-	"tipo":"motherboard",
-	"id":"7",
-	"descripcion":"Soporte para Ryzen™ 1ra, 2da Y 3ra Generación",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"MSI A68HM-E33 FM2+",
-	"precio":"6100",
-	"tipo":"motherboard",
-	"id":"8",
-	"descripcion":"AMD A68H con soporte para Ryzen™ 1ra, 2da Y 3ra Generación ",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASROCK FM2A68M-DG3+",
-	"precio":"5600",
-	"tipo":"motherboard",
-	"id":"9",
-	"descripcion":"Supports Socket FM2+ 95W / FM2 100W processors",
-	"informacion":"",
-	"caracteristicas":""
-}]
+[
+	{
+		"nombre":"INTEL CORE I5 10400",
+		"precio":"26.300",
+		"tipo":"procesador",
+		"id":"1",
+		"descripcion":"Núcleos 2,90GHz - 4,30GHz Turbo",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"AMD RYZEN 5 2600 PINNACLE RIDGE",
+		"precio":"19.900",
+		"tipo":"procesador",
+		"id":"2",
+		"descripcion":"Núcleos 3,40Hz - 3,90GHz",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"INTEL CORE I5 9400 9TH GEN",
+		"precio":"22.700",
+		"tipo":"procesador",
+		"id":"3",
+		"descripcion":"Núcleos 2,80GHz - 4,00GHz Turbo",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"AMD RYZEN 3 3300X",
+		"precio":"23.000",
+		"tipo":"procesador",
+		"id":"4",
+		"descripcion":"Núcleos 3,80GHz - 4,30GHz",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"INTEL CORE I7 10700",
+		"precio":"48.400",
+		"tipo":"procesador",
+		"id":"5",
+		"descripcion":"Núcleos 2,90GHZ - 4,90GHz Turbo",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"INTEL CORE I9 9900K",
+		"precio":"60.600",
+		"tipo":"procesador",
+		"id":"6",
+		"descripcion":"Núcleos 3,60Hz - 5,00GHz Turbo",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"INTEL CORE I7 8700K",
+		"precio":"62.300",
+		"tipo":"procesador",
+		"id":"7",
+		"descripcion":"Núcleos 3,70GHz - 4,70 GHz Turbo",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"AMD RYZEN 9 3900XT",
+		"precio":"72.800",
+		"tipo":"procesador",
+		"id":"8",
+		"descripcion":"Núcleos 3,80GGHz - 4,70GHz",
+		"informacion":"",
+		"caracteristicas":""
+	},
+	{
+		"nombre":"AMD APU A10 9700 BRISTOL RIDGE",
+		"precio":"12.200",
+		"tipo":"procesador",
+		"id":"9",
+		"descripcion":"Núcleos 3,50GHz - 3,80GHz",
+		"informacion":"",
+		"caracteristicas":""
+	}
+]

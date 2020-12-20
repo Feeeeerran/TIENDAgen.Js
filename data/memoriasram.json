@@ -1,0 +1,81 @@
+[{
+	"nombre":"CORSAIR VENG PRO WHITE",
+	"precio":"14.150",
+	"tipo":"ram",
+	"id":"1",
+	"descripcion":"16GB DDR4 3200MHz RGB 2X8GB",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"ADATA XPG SPECTRIX D60",
+	"precio":"6.400",
+	"tipo":"ram",
+	"id":"2",
+	"descripcion":"8GB DDR4 3200MHz RGB",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"ADATA XPG SPECTRIX D50",
+	"precio":"6.300",
+	"tipo":"ram",
+	"id":"3",
+	"descripcion":"8GB DDR4 3200MHz RGB",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"CRUCIAL BALLISTIX RED",
+	"precio":"5.600",
+	"tipo":"ram",
+	"id":"4",
+	"descripcion":"8GB DDR4 3200MHz",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"CORSAIR VENG LPX RED",
+	"precio":"5.300",
+	"tipo":"ram",
+	"id":"5",
+	"descripcion":"8GB DDR4 2666MHz",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"KINGSTON FURY",
+	"precio":"5.000",
+	"tipo":"ram",
+	"id":"6",
+	"descripcion":"8GB DDR4 2666MHz",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"CORSAIR LPX VENGEANCE",
+	"precio":"3.245",
+	"tipo":"ram",
+	"id":"7",
+	"descripcion":"4GB DDR4 2400MHz",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"RAM CRUCIAL",
+	"precio":"2.600",
+	"tipo":"ram",
+	"id":"8",
+	"descripcion":"4GB DDR4 2666MHz",
+	"informacion":"",
+	"caracteristicas":""
+},
+{
+	"nombre":"THERMALTAKE RGB TOUGHRAM Z-ONE",
+	"precio":"14.800",
+	"tipo":"ram",
+	"id":"9",
+	"descripcion":"16GB DDR4 3200MHz 2X8GB",
+	"informacion":"",
+	"caracteristicas":""
+}]

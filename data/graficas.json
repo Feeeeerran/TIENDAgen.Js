@@ -1,81 +1,83 @@
-[{
-	"nombre":"MSI A320M-A PRO MAX",
-	"precio":"8722",
-	"tipo":"motherboard",
-	"id":"1",
-	"descripcion":"Soporta procesadores AMD® Ryzen™ 1ra, 2da Y 3ra Generación",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE GA-H110M-H",
-	"precio":"8550",
-	"tipo":"motherboard",
-	"id":"2",
-	"descripcion":"Soporte para procesadores de 7ma y 6ta Generación Intel® Core™",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASUS H310M-E",
-	"precio":"8540",
-	"tipo":"motherboard",
-	"id":"3",
-	"descripcion":"Intel® Socket 1151 for 8th Generation Core™ i7/Core™ i5/Core™ i3/Pentium®/Celeron®",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASUS H310M-R",
-	"precio":"9000",
-	"tipo":"motherboard",
-	"id":"4",
-	"descripcion":"Intel® Socket 1151 para 8 º Generación Core ™ i7 / Core ™ i5 / Core ™ i3 / Pentium® / Celeron® procesadores",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE H310M M.2 2.0 BOX M-ATX",
-	"precio":"8400",
-	"tipo":"motherboard",
-	"id":"5",
-	"descripcion":"Chipset: Intel® H310 Express Chipset para 8 º Generación Core ™ i7",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"MSI H310M POR-VDH PLUS",
-	"precio":"7800",
-	"tipo":"motherboard",
-	"id":"6",
-	"descripcion":"Soporta 9 º / 8 º Gen Intel ® Core ™ / Pentium ® Oro / Celeron ®",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"GIGABYTE E1 6010N",
-	"precio":"6800",
-	"tipo":"motherboard",
-	"id":"7",
-	"descripcion":"Soporte para Ryzen™ 1ra, 2da Y 3ra Generación",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"MSI A68HM-E33 FM2+",
-	"precio":"6100",
-	"tipo":"motherboard",
-	"id":"8",
-	"descripcion":"AMD A68H con soporte para Ryzen™ 1ra, 2da Y 3ra Generación ",
-	"informacion":"",
-	"caracteristicas":""
-},
-{
-	"nombre":"ASROCK FM2A68M-DG3+",
-	"precio":"5600",
-	"tipo":"motherboard",
-	"id":"9",
-	"descripcion":"Supports Socket FM2+ 95W / FM2 100W processors",
-	"informacion":"",
-	"caracteristicas":""
-}]
+[
+	{
+	    "nombre": "GEFORCE GTX 1650",
+	    "precio": "29.500",
+	    "tipo": "grafica",
+	    "id": "1",
+	    "descripcion": "SUPER 4GB EVGA XC BLACK",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "RADEON RX 570",
+	    "precio": "30.000",
+	    "tipo": "grafica",
+	    "id": "2",
+	    "descripcion": "8GB GIGABYTE OC GAMING",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE GTX 1650 SUPER",
+	    "precio": "32.500",
+	    "tipo": "grafica",
+	    "id": "3",
+	    "descripcion": "4GB EVGA SC ULTRA",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE QUADRO P620",
+	    "precio": "39.000",
+	    "tipo": "grafica",
+	    "id": "4",
+	    "descripcion": "2GB PNY",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "RADEON RX 5500 XT",
+	    "precio": "41.500",
+	    "tipo": "grafica",
+	    "id": "5",
+	    "descripcion": "8GB SAPPHIRE NITRO+ SE",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE RTX 2060",
+	    "precio": "60.800",
+	    "tipo": "grafica",
+	    "id": "6",
+	    "descripcion": "6GB GIGABYTE GAMING PRO OC",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE RTX 2060",
+	    "precio": "70.000",
+	    "tipo": "grafica",
+	    "id": "7",
+	    "descripcion": "6GB EVGA KO GAMING",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE QUADRO P1000",
+	    "precio": "70.500",
+	    "tipo": "grafica",
+	    "id": "8",
+	    "descripcion": "4GB PNY",
+	    "informacion": "",
+	    "caracteristicas": ""
+	},
+	{
+	    "nombre": "GEFORCE GTX 1650",
+	    "precio": "28.800",
+	    "tipo": "grafica",
+	    "id": "9",
+	    "descripcion": "4GB MSI SUPER VENTUS XS OC",
+	    "informacion": "",
+	    "caracteristicas": ""
+	}
+]
