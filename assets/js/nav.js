@@ -22,3 +22,9 @@ $("ul.navbar-nav>li:nth-child(5)").click(function() {
 $("ul.navbar-nav>li:nth-child(6)").click(function() {
 	localStorage.navDir=4;
 })
+
+
+
+$(".carrito").hover(
+	function() {$(".albumSection").addClass("blurIn").removeClass("blurOut")},
+	function() {$(".albumSection").toggleClass("blurIn blurOut")});

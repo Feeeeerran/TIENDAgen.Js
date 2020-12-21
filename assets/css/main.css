@@ -14,6 +14,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 header {
+  position: relative;
+  z-index: 100;
   background-color: #393e46;
 }
 header a:hover {
@@ -336,7 +338,7 @@ div.album div.media.container_media p {
 div.albumSection {
   padding-left: 5vh;
   padding-right: 5vh;
-  background-color: #eeeeee;
+  background-color: green;
 }
 div.albumSection .albumSection_producto:hover {
   box-shadow: 0 0;
@@ -350,7 +352,12 @@ div.albumSection .albumSection_producto:hover .albumSection_producto_body .album
   background-position: -100% 0;
   padding-left: 1vh;
 }
+div.albumSection .albumSection_producto:hover .albumSection_producto_body .d-flex .albumSection_producto--button {
+  filter: opacity(1);
+  box-shadow: 0.5vh 0.5vh #393e46;
+}
 div.albumSection .albumSection_producto {
+  cursor: pointer;
   margin-bottom: 9vh;
   border: #92FB6D 0.4vh groove;
   transition: box-shadow 0.4s, border-color 1s;
@@ -375,7 +382,14 @@ div.albumSection .albumSection_producto .albumSection_producto_body .albumSectio
   font-size: 2.5vh;
   color: #393e46;
 }
-div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--price {
+div.albumSection .albumSection_producto .albumSection_producto_body .d-flex {
+  height: 4vh;
+  background-image: linear-gradient(to right, #A8D8EA, white, white);
+}
+div.albumSection .albumSection_producto .albumSection_producto_body .d-flex p {
+  margin: 0;
+}
+div.albumSection .albumSection_producto .albumSection_producto_body .d-flex .albumSection_producto--price {
   font-size: 3.2vh;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -383,77 +397,81 @@ div.albumSection .albumSection_producto .albumSection_producto_body .albumSectio
   padding-left: 0.5vh;
   font-size: 2.5vh;
   font-weight: bold;
-  background-image: linear-gradient(to right, #CCE639, white, white);
+}
+div.albumSection .albumSection_producto .albumSection_producto_body .d-flex .albumSection_producto--button:hover {
+  color: #393e46;
+  box-shadow: 0 0;
+}
+div.albumSection .albumSection_producto .albumSection_producto_body .d-flex .albumSection_producto--button {
+  width: 15vh;
+  height: 4.5vh;
+  position: relative;
+  right: 0.5vh;
+  bottom: 0.7vh;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 3vh;
+  background-color: #CCE639;
+  text-align: center;
+  color: #eeeeee;
+  border-radius: 0.5vh;
+  filter: opacity(0.5);
+  transition: filter 1s, box-shadow 1s, color 0.5s;
 }
 
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
+.carrito:hover {
+  cursor: default;
+  right: -5vh;
+  box-shadow: 0.5vh 0.5vh #A8D8EA, -0.5vh -0.5vh #92FB6D;
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-  }
-  50% {
-    transform: translateY(-12%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+.carrito {
+  padding-left: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  width: 50vh;
+  z-index: 10;
+  right: -40vh;
+  top: 25vh;
+  background-color: #393e46;
+  color: #eeeeee;
+  font-size: 3vh;
+  border-radius: 1.5vh;
+  transition: box-shadow 1s, right 1s;
 }
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(100%);
-  }
-  50% {
-    -webkit-transform: translateY(-12%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
+.carrito p {
+  margin: 0;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  font-family: "Roboto", sans-serif;
+  text-align: end;
 }
-.fadeIn {
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
-  animation-duration: 1.2s;
-  -webkit-animation-duration: 1.2s;
-  animation-timing-function: ease-out;
-  -webkit-animation-timing-function: ease-out;
-  visibility: visible !important;
+.carrito p a:hover {
+  text-shadow: 0 0 2px #92FB6D;
+}
+.carrito p a {
+  color: #92FB6D;
+  transition: text-shadow 1s;
 }
 
-@keyframes fadeIn {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
+.blurIn {
+  animation: blurIn 1.5s forwards;
+}
+
+@keyframes blurIn {
   100% {
-    transform: scale(1);
-    opacity: 1;
+    filter: blur(3px);
   }
 }
-@-webkit-keyframes fadeIn {
+.blurOut {
+  animation: blurOut 1.5s forwards;
+}
+
+@keyframes blurOut {
   0% {
-    -webkit-transform: scale(0.9);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: scale(1);
-    opacity: 0.5;
+    filter: blur(3px);
   }
   100% {
-    -webkit-transform: scale(1);
-    opacity: 1;
+    filter: blur(0);
   }
 }
 section.producto {

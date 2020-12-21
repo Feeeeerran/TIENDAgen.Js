@@ -118,7 +118,7 @@ div.album {
 
 div.albumSection {
 	padding:{left:5vh;right:5vh;}
-	background-color:$color4;
+	background-color:green;
 
 
 	.albumSection_producto:hover {
@@ -131,12 +131,19 @@ div.albumSection {
 				background-position: -100% 0;
 				padding-left: 1vh;
 			}
+			.d-flex {
+				.albumSection_producto--button {
+					filter:opacity(1);
+					box-shadow:0.5vh 0.5vh $color3;
+				}
+			}
+			
 		}
 	}
 
 	.albumSection_producto{
+		cursor: pointer;
 		margin-bottom: 9vh;
-		// visibility: visible
 		border:$color1 0.4vh groove;
 		transition: box-shadow 0.4s,border-color 1s;
 		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1;
@@ -166,62 +173,80 @@ div.albumSection {
 				font-size: 2.5vh;
 				color:$color3;
 			}
-			.albumSection_producto--price{
-				@include producto;
-				padding-left:0.5vh;
-				font:{size:2.5vh;weight:bold;};
-				background-image: linear-gradient(to right,$amarillo,white,white);
+
+			.d-flex {
+				p {margin:0;}
+				height: 4vh;
+				background-image: linear-gradient(to right,$color2,white,white);
+				.albumSection_producto--price{
+					@include producto;
+					padding-left:0.5vh;
+					font:{size:2.5vh;weight:bold;};
+				}
+
+				.albumSection_producto--button:hover {
+					color:$color3;
+					box-shadow:0 0;
+				}
+				.albumSection_producto--button {
+					width: 	15vh;
+					height: 4.5vh;
+					position: relative;
+					right:0.5vh;
+					bottom:0.7vh;
+					font-family:$subtitulo;
+					font-size: 3vh;
+					background-color:$amarillo;
+					text-align: center;
+					color:$color4;
+					border-radius:0.5vh;
+					filter:opacity(0.5);
+					transition:filter 1s,box-shadow 1s,color 0.5s;
+				}
 			}
+			
+
+
 		}
 	}
 }
 
 
-
-// Animaciones de entrada ---------------
-.slideUp{
-	animation-name: slideUp;
-	-webkit-animation-name: slideUp;
-	animation-duration: 1s;
-	-webkit-animation-duration: 1s;	
-	animation-timing-function: ease;
-	-webkit-animation-timing-function: ease;		
-	visibility: visible !important;
-}			
-
-@keyframes slideUp {
-	0% {transform: translateY(100%);}
-	50%{transform: translateY(-12%);}		
-	100% {transform: translateY(0%);}	
+.carrito:hover {
+	cursor: default;
+	right:-5vh;
+	box-shadow:0.5vh 0.5vh $color2,-0.5vh -0.5vh $color1;
 }
 
-@-webkit-keyframes slideUp {
-	0% {-webkit-transform: translateY(100%);}
-	50%{-webkit-transform: translateY(-12%);}	
-	100% {-webkit-transform: translateY(0%);}	
+.carrito {
+	padding:{left:3vh;top:1vh;bottom:1vh;}
+	width: 50vh;
+	z-index: 10;
+	right:-40vh; //-10vh
+	top:25vh;
+	background-color:$color3;
+	color:$color4;
+	font-size: 3vh;
+	border-radius: 1.5vh;
+
+	p {
+		margin:0;
+		padding:{top:0.5vh;bottom:0.5vh;}
+		font-family:$general;
+		text-align: end;
+
+		a:hover{text-shadow:0 0 2px $color1}
+		a {color:$color1;transition: text-shadow 1s;}
+	}
+
+	transition:box-shadow 1s,right 1s;
 }
 
 
-
-.fadeIn{
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;
-	animation-duration: 1.2s;
-	-webkit-animation-duration: 1.2s;
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
-	visibility: visible !important;	
-}
-
-@keyframes fadeIn {
-	0% {transform:scale(0.9);opacity: 0.0;}
-	60% {transform: scale(1);opacity: 0.5}
-	100% {transform: scale(1);opacity: 1;}	
-}
-
-@-webkit-keyframes fadeIn {
-	0% {-webkit-transform:scale(0.9);opacity: 0.0;}
-	60% {-webkit-transform: scale(1);opacity: 0.5}
-	100% {-webkit-transform: scale(1);opacity: 1;}
-}
+.blurIn {animation: blurIn 1.5s forwards;}
+@keyframes blurIn {100% {filter:blur(3px);}}
+.blurOut {animation:blurOut 1.5s forwards;}
+@keyframes blurOut {
+	0% {filter:blur(3px);}
+	100% {filter:blur(0);}}
 
