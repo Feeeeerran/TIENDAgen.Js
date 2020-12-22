@@ -204,9 +204,6 @@ div.albumSection {
 					transition:filter 1s,box-shadow 1s,color 0.5s;
 				}
 			}
-			
-
-
 		}
 	}
 }
@@ -235,10 +232,16 @@ div.albumSection {
 		font-family:$general;
 		text-align: end;
 
-		a:hover{text-shadow:0 0 2px $color1}
-		a {color:$color1;transition: text-shadow 1s;}
+		a:hover{text-shadow:0 0 5px $color1}
+		a {cursor: pointer;color:$color1;transition: text-shadow 1s;}
 	}
 
+	p:nth-child(3):hover {color:#ef6370;text-shadow: 0 0 3px #ef6370;} 
+	p:nth-child(3) {
+		cursor:pointer;
+		color:#FA890F;
+		transition:color 1s,text-shadow 1s;}
+	
 	transition:box-shadow 1s,right 1s;
 }
 
@@ -248,5 +251,11 @@ div.albumSection {
 .blurOut {animation:blurOut 1.5s forwards;}
 @keyframes blurOut {
 	0% {filter:blur(3px);}
-	100% {filter:blur(0);}}
+	100% {filter:blur(0);}
+}
 
+.carritoAnim {animation:carritoAnim 0.5s;}
+@keyframes carritoAnim {
+	50% {transform:rotate(-45deg);}
+	100% {transform:rotate(0);}
+}

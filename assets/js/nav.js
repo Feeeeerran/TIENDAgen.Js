@@ -1,8 +1,4 @@
-// Por si algún pillo quiere entrar a producto.html de primeras
-// defino un navDir por defecto 
-localStorage.navDir=0; 
-
-// motherboards
+ // motherboards
 $("ul.navbar-nav>li:nth-child(2)").click(function() {
 	localStorage.navDir=0;
 });

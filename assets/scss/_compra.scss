@@ -1,0 +1,145 @@
+@import "utilities/variables";
+
+h3 {
+	cursor:default;
+	margin-top: 5vh;
+	font:{family:$subtitulo;size:10vh;}
+	color:$color1;
+}
+
+
+.compraMenu {
+	margin-top: 5vh;
+	margin-bottom: 30vh;
+	.card {
+		border:$color1 0.5vh solid;
+		.card-header {
+			background-color: $color3;
+
+			button:focus {
+				outline: 0;
+				box-shadow: none;
+				text-decoration: none;
+			}
+			button:hover {
+				text-decoration: none;
+				color:$color1;
+			}
+			button {
+				margin:0;
+				p {margin:0;}
+				.compra_nombre{
+					font:{
+						size:3.2vh;
+						weight:bold;
+						family:$titulo;}
+					color:$color4;
+					letter-spacing: 0.2vh;
+				}
+				.compra_precio {
+					font:{size:2.8vh;weight:bold;family:$general;}
+					color:$amarillo;
+				}
+				.compra_cantidad {
+					font:{size:2.5vh;weight:bold;family:$general;}
+					color:$color4;
+				}
+
+			}
+		}
+		
+		.card-body {
+			p { 
+				margin:0;
+				font:{
+					size:2.5vh;
+					weight:bold;
+					family:$general;
+					}
+			}
+			div {cursor: default;}
+			button:focus{
+				outline:0;
+			}
+			button:nth-child(1):hover {box-shadow: 0 0;}
+			button:nth-child(1) {
+				width:4.5vh;
+				margin-right: 1.5vh;
+				background-color:$color1;
+				border:none;
+				border-radius: 0.6vh;
+				font:{
+					family: $subtitulo;
+					size:2.6vh;
+					weight:bold;}
+				color:$color3;
+				box-shadow:0.3vh 0.3vh $color3;
+				transition: box-shadow 0.5s;
+			}
+			button:nth-child(2):hover {box-shadow: 0 0;}
+			button:nth-child(2) {
+				width:4.5vh;
+				margin-right: 1.5vh;
+				background-color:#EE5E5E;
+				border:none;
+				border-radius: 0.6vh;
+				font:{
+					family: $subtitulo;
+					size:2.6vh;
+					weight:bold;}
+				box-shadow:0.3vh 0.3vh $color3;
+				transition: box-shadow 0.5s;
+			}
+			button:nth-child(3):hover {
+				box-shadow: 0 0 1.5vh #F41B25;
+				background-color: #F41B25}
+			button:nth-child(3) {
+				width: 15vh;
+				background-color: #EA893B;
+				border:none;
+				border-radius: 0.6vh;
+				font:{
+					family: $subtitulo;
+					size:2.6vh;}
+				color:$color4;
+				box-shadow:0.3vh 0.3vh $color3;
+				transition: box-shadow 0.5s,background-color 0.5s;
+			}
+		}
+	}
+
+	.total {
+		margin:{top: 10vh;right:1vh;}
+		p:nth-child(1) {
+			font:{
+				size:3.2vh;
+				weight:bold;
+				family:$general;}
+			color:$color3;
+			letter-spacing: 0.2vh;
+		}
+		.precioTotal {
+			margin-right: 3vh;
+			border:0.5vh solid $color2;
+			font:{
+				size:3.2vh;
+				weight:bold;
+				family:$general;}
+			color:$color3;
+			letter-spacing: 0.2vh;
+			word-spacing: 2vh;
+		}
+
+		.compra_button {
+			font:{
+				size:3.2vh;
+				weight:bold;
+				family:$general;}
+			transform: translateY(-1vh);
+			margin-left: 2vh;
+			width: 2vh;
+		}
+	}
+	
+}
+

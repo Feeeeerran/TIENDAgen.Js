@@ -13,6 +13,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 header {
   position: relative;
   z-index: 100;
@@ -446,11 +449,21 @@ div.albumSection .albumSection_producto .albumSection_producto_body .d-flex .alb
   text-align: end;
 }
 .carrito p a:hover {
-  text-shadow: 0 0 2px #92FB6D;
+  text-shadow: 0 0 5px #92FB6D;
 }
 .carrito p a {
+  cursor: pointer;
   color: #92FB6D;
   transition: text-shadow 1s;
+}
+.carrito p:nth-child(3):hover {
+  color: #ef6370;
+  text-shadow: 0 0 3px #ef6370;
+}
+.carrito p:nth-child(3) {
+  cursor: pointer;
+  color: #FA890F;
+  transition: color 1s, text-shadow 1s;
 }
 
 .blurIn {
@@ -472,6 +485,18 @@ div.albumSection .albumSection_producto .albumSection_producto_body .d-flex .alb
   }
   100% {
     filter: blur(0);
+  }
+}
+.carritoAnim {
+  animation: carritoAnim 0.5s;
+}
+
+@keyframes carritoAnim {
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 section.producto {
@@ -621,6 +646,146 @@ section.producto .producto_data form .modal-body {
   background-color: #393e46;
   border-color: #A8D8EA;
   font-size: 3vh;
+}
+
+h3 {
+  cursor: default;
+  margin-top: 5vh;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 10vh;
+  color: #92FB6D;
+}
+
+.compraMenu {
+  margin-top: 5vh;
+  margin-bottom: 30vh;
+}
+.compraMenu .card {
+  border: #92FB6D 0.5vh solid;
+}
+.compraMenu .card .card-header {
+  background-color: #393e46;
+}
+.compraMenu .card .card-header button:focus {
+  outline: 0;
+  box-shadow: none;
+  text-decoration: none;
+}
+.compraMenu .card .card-header button:hover {
+  text-decoration: none;
+  color: #92FB6D;
+}
+.compraMenu .card .card-header button {
+  margin: 0;
+}
+.compraMenu .card .card-header button p {
+  margin: 0;
+}
+.compraMenu .card .card-header button .compra_nombre {
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: "Fugaz One", cursive;
+  color: #eeeeee;
+  letter-spacing: 0.2vh;
+}
+.compraMenu .card .card-header button .compra_precio {
+  font-size: 2.8vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #CCE639;
+}
+.compraMenu .card .card-header button .compra_cantidad {
+  font-size: 2.5vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #eeeeee;
+}
+.compraMenu .card .card-body p {
+  margin: 0;
+  font-size: 2.5vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.compraMenu .card .card-body div {
+  cursor: default;
+}
+.compraMenu .card .card-body button:focus {
+  outline: 0;
+}
+.compraMenu .card .card-body button:nth-child(1):hover {
+  box-shadow: 0 0;
+}
+.compraMenu .card .card-body button:nth-child(1) {
+  width: 4.5vh;
+  margin-right: 1.5vh;
+  background-color: #92FB6D;
+  border: none;
+  border-radius: 0.6vh;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 2.6vh;
+  font-weight: bold;
+  color: #393e46;
+  box-shadow: 0.3vh 0.3vh #393e46;
+  transition: box-shadow 0.5s;
+}
+.compraMenu .card .card-body button:nth-child(2):hover {
+  box-shadow: 0 0;
+}
+.compraMenu .card .card-body button:nth-child(2) {
+  width: 4.5vh;
+  margin-right: 1.5vh;
+  background-color: #EE5E5E;
+  border: none;
+  border-radius: 0.6vh;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 2.6vh;
+  font-weight: bold;
+  box-shadow: 0.3vh 0.3vh #393e46;
+  transition: box-shadow 0.5s;
+}
+.compraMenu .card .card-body button:nth-child(3):hover {
+  box-shadow: 0 0 1.5vh #F41B25;
+  background-color: #F41B25;
+}
+.compraMenu .card .card-body button:nth-child(3) {
+  width: 15vh;
+  background-color: #EA893B;
+  border: none;
+  border-radius: 0.6vh;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 2.6vh;
+  color: #eeeeee;
+  box-shadow: 0.3vh 0.3vh #393e46;
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+.compraMenu .total {
+  margin-top: 10vh;
+  margin-right: 1vh;
+}
+.compraMenu .total p:nth-child(1) {
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #393e46;
+  letter-spacing: 0.2vh;
+}
+.compraMenu .total .precioTotal {
+  margin-right: 3vh;
+  border: 0.5vh solid #A8D8EA;
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #393e46;
+  letter-spacing: 0.2vh;
+  word-spacing: 2vh;
+}
+.compraMenu .total .compra_button {
+  font-size: 3.2vh;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  transform: translateY(-1vh);
+  margin-left: 2vh;
+  width: 2vh;
 }
 
 @media only screen and (max-width: 768px) {
