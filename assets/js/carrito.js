@@ -519,7 +519,7 @@ var prodLista=[
 
 
 var carrito=[];
-if (localStorage.hist=1) {
+if (localStorage.hist==1) {
 	carrito=JSON.parse(localStorage.carrito);
 }
 
